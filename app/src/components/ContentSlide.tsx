@@ -48,15 +48,6 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
     }
   }, [isActive]);
 
-  // Adjust underline width to match title width
-  useEffect(() => {
-    const titleEl = titleRef.current;
-    const underline = underlineRef.current;
-    if (titleEl && underline) {
-      const titleWidth = titleEl.offsetWidth;
-      underline.style.width = `${titleWidth}px`;
-    }
-  }, []);
 
   // Mobile layout
   if (isMobile) {
@@ -99,7 +90,7 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
                 className="text-gray-400 text-sm tracking-widest overflow-hidden whitespace-nowrap"
                 style={{ fontFamily: 'VT323, monospace' }}
               >
-                ============================================================
+                ================================================================================================================================================
               </div>
             </div>
             
@@ -156,7 +147,7 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
               className="text-gray-400 text-sm md:text-base tracking-widest overflow-hidden whitespace-nowrap"
               style={{ fontFamily: 'VT323, monospace' }}
             >
-              ============================================================
+              ================================================================================================================================================
             </div>
           </div>
           
