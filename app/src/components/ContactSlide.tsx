@@ -108,7 +108,7 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
         className="text-gray-400 text-sm md:text-base tracking-widest overflow-hidden whitespace-nowrap mx-auto"
         style={{ fontFamily: 'VT323, monospace' }}
       >
-        ============================================================
+        ================================================================
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ function App() {
     {
       id: 'about',
       title: 'ABOUT.',
-      image: '/images/kaixo.jpg',
+      image: '/images/foto1.jpg',
       imageAlt: 'Basque pintxos spread',
       content: (
         <>
@@ -58,7 +58,7 @@ function App() {
     {
       id: 'paella',
       title: 'PAELLA.',
-      image: '/images/paella.jpg',
+      image: '/images/paella2.jpg',
       imageAlt: 'Traditional Spanish paella',
       content: (
         <>

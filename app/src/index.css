@@ -70,7 +70,7 @@
 
 /* Navigation styles */
 .nav-link {
-  @apply text-gray-800 font-medium tracking-widest uppercase relative transition-colors duration-300;
+  @apply text-gray-800 font-bold tracking-widest uppercase relative transition-colors duration-300;
   font-family: 'VT323', monospace;
 }
 
