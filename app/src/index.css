@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 350 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 350 70% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 85%;
+    --input: 0 0% 85%;
+    --ring: 350 70% 45%;
+    --radius: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: auto;
+    overflow: hidden;
+  }
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
+    overflow: hidden;
+  }
+}
+
+/* Slide container */
+.slides-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Slide backgrounds - all pure white */
+.slide-even,
+.slide-odd {
+  background-color: #ffffff;
+}
+
+/* Navigation styles */
+.nav-link {
+  @apply text-gray-800 font-medium tracking-widest uppercase relative transition-colors duration-300;
+  font-family: 'VT323', monospace;
+}
+
+.nav-link:hover {
+  color: #c41e3a;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #c41e3a;
+}
+
+/* Instagram button */
+.instagram-btn {
+  @apply text-gray-800 transition-all duration-300;
+}
+
+.instagram-btn:hover {
+  color: #c41e3a;
+  transform: scale(1.1);
+}
+
+/* Form styles */
+.form-input {
+  @apply w-full bg-gray-50 border border-gray-200 text-gray-900 px-4 rounded-none transition-all duration-300;
+  font-family: 'VT323', monospace;
+  font-size: 1.125rem;
+}
+
+.form-input:focus {
+  @apply outline-none border-[#c41e3a];
+}
+
+.form-input::placeholder {
+  @apply text-gray-400;
+}
+
+.submit-btn {
+  @apply bg-[#c41e3a] text-white px-8 font-medium tracking-widest uppercase transition-all duration-300;
+  font-family: 'VT323', monospace;
+  font-size: 1.25rem;
+}
+
+.submit-btn:hover {
+  @apply bg-[#a01830];
+}
+
+/* Footer */
+.footer-text {
+  @apply text-gray-500 tracking-wider;
+  font-family: 'VT323', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c41e3a;
+}
+
+/* Scroll indicator animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.scroll-indicator {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Image fly-in animation */
+@keyframes flyInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fly-in {
+  animation: flyInFromLeft 0.8s ease-out forwards;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

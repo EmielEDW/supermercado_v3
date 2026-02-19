@@ -1,0 +1,101 @@
+/* App-specific styles */
+
+/* Ensure full height */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Desktop: Snap scrolling */
+.slides-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc #f1f1f1;
+}
+
+/* Mobile: Free scrolling */
+.mobile-scroll {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Desktop slide */
+.slides-container .slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Mobile section */
+.mobile-scroll .slide {
+  min-height: auto;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Slide backgrounds - all white */
+.slide-even,
+.slide-odd {
+  background-color: #ffffff;
+}
+
+/* Smooth transitions */
+.slide {
+  transition: opacity 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c41e3a;
+}
+
+/* Scroll indicator animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.scroll-indicator {
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
