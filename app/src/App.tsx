@@ -47,10 +47,7 @@ function App() {
       content: (
         <>
           <p>
-            Mijn grootouders vluchten als kind voor de Franco-tirannie die zich in 1936 in hun vaderland afspeelde. Via enkele omwegen kwamen ze in Gent terecht, waar ze uiteindelijk de rest van hun leven zouden blijven. Zo werd Gent mijn geboortestad.
-          </p>
-          <p>
-            Elvira & José-Luis, waren bourgondiërs met hart en nieren. Warmte en smaak dicteerden mijn jeugd. Welkom bij SUPERMERCADO.
+            <span className="text-[#c41e3a] font-bold">FAMILIA.</span> Elvira & José-Luis vluchtten als kind voor de Franco-tirannie die zich in 1936 in hun vaderland afspeelde. Via enkele omwegen kwamen ze in Gent terecht, waar ze uiteindelijk de rest van hun leven zouden blijven. Zo werd Gent mijn geboortestad. Mijn grootouders waren bourgondiërs in hart en nieren. Warmte en smaak dicteerden mijn jeugd. Twintig jaar later sta ik zelf achter het fornuis. Mijn naam is Jaime Larrea-Betolaza, welkom bij <span className="text-[#c41e3a] font-bold">SUPERMERCADO.</span>
           </p>
         </>
       ),
