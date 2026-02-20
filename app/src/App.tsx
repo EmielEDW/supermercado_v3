@@ -76,7 +76,7 @@ function App() {
     if (isMobile) {
       const slideHeight = window.innerHeight;
       container.scrollTo({
-        top: index * slideHeight * 0.8,
+        top: index * slideHeight,
         behavior: 'smooth',
       });
       setActiveSlide(index);

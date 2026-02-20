@@ -55,37 +55,35 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
       <div
         ref={slideRef}
         id={id}
-        className="slide flex flex-col bg-white py-8"
+        className="slide flex flex-col bg-white pt-14 overflow-hidden"
       >
-        {/* Image */}
-        <div className="w-full px-4 mb-6">
-          <div
-            ref={imageContainerRef}
-            className={`relative bg-white mx-auto ${isAboutSlide ? 'aspect-square w-full max-w-[500px]' : 'w-full'}`}
-            style={{ willChange: 'transform, opacity' }}
-          >
-            <img
-              src={imageSrc}
-              alt={imageAlt}
-              className={`w-full h-full ${isAboutSlide ? 'object-cover' : 'object-contain'}`}
-              style={{ backgroundColor: '#ffffff' }}
-            />
-          </div>
+        {/* Image - square */}
+        <div
+          ref={imageContainerRef}
+          className="w-full aspect-square flex-shrink-0"
+          style={{ willChange: 'transform, opacity' }}
+        >
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            className="w-full h-full object-cover"
+            style={{ backgroundColor: '#ffffff' }}
+          />
         </div>
 
         {/* Text */}
-        <div className="w-full px-4">
-          <div ref={textRef} className="max-w-lg mx-auto">
+        <div className="flex-1 overflow-y-auto px-4 py-3">
+          <div ref={textRef}>
             {/* Title with underline */}
-            <div className="mb-4">
-              <h2 
+            <div className="mb-3">
+              <h2
                 ref={titleRef}
-                className="text-2xl font-bold tracking-wide text-gray-900 mb-1 inline-block" 
+                className="text-2xl font-bold tracking-wide text-gray-900 mb-1 inline-block"
                 style={{ fontFamily: 'VT323, monospace' }}
               >
                 {title}
               </h2>
-              <div 
+              <div
                 ref={underlineRef}
                 className="text-gray-400 text-sm tracking-widest overflow-hidden whitespace-nowrap"
                 style={{ fontFamily: 'VT323, monospace' }}
@@ -93,10 +91,10 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
                 ================================================================================================================================================
               </div>
             </div>
-            
+
             {/* Content */}
-            <div 
-              className="text-base leading-relaxed text-gray-600 space-y-2" 
+            <div
+              className="text-base leading-relaxed text-gray-600 space-y-2"
               style={{ fontFamily: 'VT323, monospace' }}
             >
               {content}

@@ -19,12 +19,23 @@ html, body, #root {
   scrollbar-color: #ccc #f1f1f1;
 }
 
-/* Mobile: Free scrolling */
+/* Mobile: Snap scrolling */
 .mobile-scroll {
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+}
+
+.mobile-scroll .slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
 /* Desktop slide */
