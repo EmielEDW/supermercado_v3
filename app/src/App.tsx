@@ -29,7 +29,7 @@ function App() {
     {
       id: 'about',
       title: 'ABOUT.',
-      image: '/images/foto1.jpg',
+      image: '/images/unnamed.jpg',
       imageAlt: 'Basque pintxos spread',
       content: (
         <>
