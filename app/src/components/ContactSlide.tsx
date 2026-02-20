@@ -119,10 +119,10 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
       <div
         ref={slideRef}
         id="contact"
-        className="slide flex flex-col bg-white py-8"
+        className="slide flex flex-col bg-white pt-14 overflow-hidden"
       >
-        {/* Content - centered */}
-        <div className="w-full px-4 flex-1">
+        {/* Content - scrollable */}
+        <div className="w-full px-4 flex-1 overflow-y-auto py-4">
           <div ref={contentRef} className="max-w-md mx-auto">
             <TitleWithUnderline />
             
