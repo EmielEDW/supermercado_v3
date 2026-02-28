@@ -126,8 +126,8 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
           <div ref={contentRef} className="max-w-md mx-auto">
             <TitleWithUnderline />
             
-            <p 
-              className="text-base leading-relaxed text-gray-600 mb-4" 
+            <p
+              className="text-base leading-relaxed text-gray-600 mb-4 text-justify"
               style={{ fontFamily: 'VT323, monospace' }}
             >
               <span className="text-[#c41e3a] font-bold">AUPA.</span> Wij bieden maatwerk voor elk evenement. SUPERMERCADO staat ook altijd open voor leuke samenwerkingen en pop-ups. Vul het formulier in en wij nemen contact met je op. <span className="text-[#c41e3a] font-bold">EUSKADI WITH LOVE.</span>
@@ -219,8 +219,8 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
         <div ref={contentRef} className="max-w-xl w-full px-8">
           <TitleWithUnderline />
           
-          <p 
-            className="text-lg md:text-xl leading-relaxed text-gray-600 mb-8" 
+          <p
+            className="text-lg md:text-xl leading-relaxed text-gray-600 mb-8 text-justify"
             style={{ fontFamily: 'VT323, monospace' }}
           >
             <span className="text-[#c41e3a] font-bold">AUPA.</span> Wij bieden maatwerk voor elk evenement. SUPERMERCADO staat ook altijd open voor leuke samenwerkingen en pop-ups. Vul het formulier in en wij nemen contact met je op. <span className="text-[#c41e3a] font-bold">EUSKADI WITH LOVE.</span>
