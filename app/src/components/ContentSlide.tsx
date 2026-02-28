@@ -55,10 +55,10 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
         id={id}
         className="slide flex flex-col bg-white pt-14 overflow-hidden"
       >
-        {/* Image - square */}
+        {/* Image */}
         <div
           ref={imageContainerRef}
-          className="w-full aspect-square flex-shrink-0"
+          className={`w-full flex-shrink-0 ${id === 'roots' ? 'h-44' : 'aspect-square'}`}
           style={{ willChange: 'transform, opacity' }}
         >
           <img
