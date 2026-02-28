@@ -18,8 +18,6 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
   const titleRef = useRef<HTMLHeadingElement>(null);
   const underlineRef = useRef<HTMLDivElement>(null);
 
-  const isAboutSlide = id === 'about';
-
   useEffect(() => {
     if (!isActive) return;
 
@@ -116,21 +114,21 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
       <div className="w-1/2 h-full flex items-center justify-center p-3 md:p-8 bg-white">
         <div
           ref={imageContainerRef}
-          className={`relative bg-white ${isAboutSlide ? 'aspect-square w-[85%] max-w-[600px]' : 'w-full h-auto max-h-[80%]'}`}
+          className="relative bg-white w-full h-auto max-h-[80%]"
           style={{ willChange: 'transform, opacity' }}
         >
           <img
             src={imageSrc}
             alt={imageAlt}
-            className={`w-full h-full ${isAboutSlide ? 'object-cover' : 'object-contain max-h-[70vh]'}`}
+            className="w-full h-full object-contain max-h-[70vh]"
             style={{ backgroundColor: '#ffffff' }}
           />
         </div>
       </div>
 
       {/* Text */}
-      <div className="w-1/2 h-full flex items-start md:items-center justify-center p-4 md:px-16 overflow-y-auto bg-white">
-        <div ref={textRef} className="max-w-lg">
+      <div className="w-1/2 h-full flex items-center justify-center p-4 md:px-16 overflow-y-auto bg-white">
+        <div ref={textRef} className="w-full max-w-lg text-left">
           {/* Title with underline */}
           <div className="mb-4 md:mb-6">
             <h2 

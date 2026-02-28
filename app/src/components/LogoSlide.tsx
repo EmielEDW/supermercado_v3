@@ -27,7 +27,7 @@ const LogoSlide = ({ isActive, isMobile }: LogoSlideProps) => {
   }, [isActive]);
 
   const slideClasses = isMobile
-    ? 'slide bg-white flex flex-col items-center justify-end pb-8'
+    ? 'slide bg-white flex flex-col items-center justify-center pt-14'
     : 'slide bg-white flex flex-col items-center justify-end pb-4';
 
   return (
