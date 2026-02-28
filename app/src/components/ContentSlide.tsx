@@ -58,7 +58,7 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
         {/* Image */}
         <div
           ref={imageContainerRef}
-          className={`w-full flex-shrink-0 ${id === 'roots' ? 'h-44' : 'aspect-square'}`}
+          className={`w-full flex-shrink-0 ${id === 'roots' ? 'h-56' : 'aspect-square'}`}
           style={{ willChange: 'transform, opacity' }}
         >
           <img
@@ -71,7 +71,7 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
 
         {/* Text */}
         <div className="flex-1 overflow-y-auto px-4 py-3">
-          <div ref={textRef}>
+          <div ref={textRef} className="text-justify">
             {/* Title with underline */}
             <div className="mb-3">
               <h2
@@ -128,7 +128,7 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
 
       {/* Text */}
       <div className="w-1/2 h-full flex items-center justify-center p-4 md:px-16 overflow-y-auto bg-white">
-        <div ref={textRef} className="w-full max-w-lg text-left">
+        <div ref={textRef} className="w-full max-w-lg text-justify">
           {/* Title with underline */}
           <div className="mb-4 md:mb-6">
             <h2 
