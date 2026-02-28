@@ -99,18 +99,16 @@ function App() {
   }, [isMobile]);
 
   useEffect(() => {
-    if (isMobile) return;
-
     const container = containerRef.current;
     if (!container) return;
 
     const handleScroll = () => {
-      if (isScrolling.current) return;
-      
+      if (!isMobile && isScrolling.current) return;
+
       const scrollTop = container.scrollTop;
       const slideHeight = window.innerHeight;
       const newSlide = Math.round(scrollTop / slideHeight);
-      
+
       if (newSlide !== activeSlide && newSlide >= 0 && newSlide < 5) {
         setActiveSlide(newSlide);
       }
