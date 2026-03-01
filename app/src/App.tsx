@@ -60,7 +60,7 @@ function App() {
       content: (
         <>
           <p>
-            <span className="text-[#c41e3a] font-bold">STAPLE.</span> Een familierecept dat al meer dan 40 jaar gesmaakt wordt. Hetzelfde vertrouwde recept in een nieuw jasje. Ideaal voor grotere groepen, maar ook perfect te combineren in menuvorm met onze pintxos. <span className="text-[#c41e3a] font-bold">TRADITIE.</span>
+            <span className="text-[#c41e3a] font-bold">STAPLE.</span> Een familierecept dat al meer dan 40 jaar gesmaakt wordt. Hetzelfde vertrouwde concept in een nieuw jasje. Ideaal voor grotere groepen, maar ook perfect te combineren in menuvorm met onze pintxos. <span className="text-[#c41e3a] font-bold">TRADITIE.</span>
           </p>
         </>
       ),
