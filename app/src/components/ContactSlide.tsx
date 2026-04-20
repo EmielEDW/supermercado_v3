@@ -200,7 +200,7 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
         <div className="bg-gray-50 py-5 px-4 border-t border-gray-100 mt-auto">
           <div className="text-center footer-text text-base font-bold" style={{ fontFamily: 'VT323, monospace' }}>
             <p>Lange Kruisstraat 18, 9000 Gent BE</p>
-            <p>info@superrrmercado.be | +32 478 09 83 83 | BE1011.539.358</p>
+            <p>info@superrrrmercado.be | +32 478 09 83 83 | BE1011.539.358</p>
           </div>
         </div>
       </div>
@@ -296,7 +296,7 @@ const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
             <p>Lange Kruisstraat 18, 9000 Gent BE</p>
           </div>
           <div className="text-right">
-            <p>info@superrrmercado.be | +32 478 09 83 83 | BE1011.539.358</p>
+            <p>info@superrrrmercado.be | +32 478 09 83 83 | BE1011.539.358</p>
           </div>
         </div>
       </div>
