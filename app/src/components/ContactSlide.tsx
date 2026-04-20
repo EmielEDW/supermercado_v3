@@ -7,9 +7,9 @@ interface ContactSlideProps {
   isMobile: boolean;
 }
 
-const EMAILJS_SERVICE_ID = 'service_25kako1';
-const EMAILJS_TEMPLATE_ID = 'template_ar7l1wd';
-const EMAILJS_PUBLIC_KEY = 'GePK_ewBJq6OCNS1I';
+const EMAILJS_SERVICE_ID = 'service_yx1e6a4';
+const EMAILJS_TEMPLATE_ID = 'template_es40c5z';
+const EMAILJS_PUBLIC_KEY = 'aYvvnCZGCcYffBSwV';
 
 const ContactSlide = ({ isActive, isMobile }: ContactSlideProps) => {
   const slideRef = useRef<HTMLDivElement>(null);
