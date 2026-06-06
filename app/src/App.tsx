@@ -42,7 +42,7 @@ function App() {
     {
       id: 'roots',
       title: 'ROOTS.',
-      image: '/images/roots.jpg',
+      image: '/images/jaime.jpg',
       imageAlt: 'Basque fishermen heritage',
       content: (
         <>
@@ -55,7 +55,7 @@ function App() {
     {
       id: 'paella',
       title: 'PAELLA.',
-      image: '/images/paella2.jpg',
+      image: '/images/foto1(6jun).png',
       imageAlt: 'Traditional Spanish paella',
       content: (
         <>
