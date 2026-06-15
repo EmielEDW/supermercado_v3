@@ -58,14 +58,17 @@ const ContentSlide = ({ id, title, content, imageSrc, imageAlt, isActive, isMobi
         {/* Image */}
         <div
           ref={imageContainerRef}
-          className={`w-full flex-shrink-0 ${id === 'roots' ? 'aspect-[4/3]' : 'aspect-square'}`}
+          className={`w-full flex-shrink-0 ${id === 'roots' ? 'relative overflow-hidden aspect-[4/3]' : 'aspect-square'}`}
           style={{ willChange: 'transform, opacity' }}
         >
           <img
             src={imageSrc}
             alt={imageAlt}
-            className="w-full h-full object-cover"
-            style={{ backgroundColor: '#ffffff' }}
+            className={id === 'roots' ? 'absolute inset-0 w-full h-full object-cover' : 'w-full h-full object-cover'}
+            style={{
+              backgroundColor: '#ffffff',
+              objectPosition: id === 'roots' ? 'center 15%' : 'center',
+            }}
           />
         </div>
 
