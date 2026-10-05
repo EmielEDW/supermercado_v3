@@ -27,4 +27,5 @@ Authorization: user explicitly requested a plan followed by full implementation 
 - Live verified: correct-code login, browser file chooser/upload/success, logout, unauthenticated PUT rejected, /admin noindex, PDF bytes equal blank source, download disposition. Real Blob concurrent limit: five allowed and three blocked; generic Blob conditional-conflict response now retried.
 - PDF.js renderer added after native PDF rendering was unavailable in the test browser. Verified blank PDF and a local-only two-page text fixture at desktop and 375px mobile widths. Fonts/CMaps/WASM copied during prebuild; worker and viewer lazy-loaded.
 - Production project remains supermercado-v3 with existing domain www.superrrmercado.be. Secrets configured only in server environment; no plaintext password committed.
-- GitHub main push was rejected by automatic approval review pending explicit user approval. All implementation is committed locally on feat/menu-admin. Do not retry main push without user approval.
+- User explicitly approved synchronizing the tested changes to GitHub main in the follow-up. Push only committed feature changes; preserve pre-existing uncommitted dist image changes.
+
