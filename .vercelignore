@@ -2,6 +2,7 @@
 app/.env*
 app/dist
 app/.output
+app/public/pdfjs
 app/tmp
 app/tmp-*
 app/audit-*.json

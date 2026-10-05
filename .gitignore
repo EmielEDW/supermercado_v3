@@ -3,6 +3,7 @@ app/.vercel/
 app/.env*
 !app/.env.example
 app/.output/
+app/public/pdfjs/
 app/tmp/
 app/*.tsbuildinfo
 .superpowers/

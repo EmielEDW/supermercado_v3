@@ -1,5 +1,7 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { ArrowLeft, ArrowUpRight, Download } from 'lucide-react';
+
+const PdfViewer = lazy(() => import('./PdfViewer'));
 
 export default function MenuPage() {
   useEffect(() => { document.title = 'Menu | SUPERMERCADO'; }, []);
@@ -18,7 +20,7 @@ export default function MenuPage() {
           </div>
         </div>
         <p className="menu-help">Bekijk onze menukaart hieronder. Op je telefoon kan je de pdf ook rechtstreeks openen.</p>
-        <iframe className="menu-pdf" title="Menukaart SUPERMERCADO" src="/api/menu#view=FitH" />
+        <Suspense fallback={<p role="status">Menukaart laden…</p>}><PdfViewer /></Suspense>
       </main>
     </div>
   );
