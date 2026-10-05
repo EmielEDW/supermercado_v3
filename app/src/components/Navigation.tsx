@@ -17,12 +17,13 @@ const Navigation = ({ activeSlide, onNavigate }: NavigationProps) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
       <div className="flex items-center justify-between px-3 md:px-8 py-4 md:py-5">
         {/* Left Navigation */}
-        <div className="flex items-center justify-between flex-1 gap-2 md:gap-8 pr-2 md:pr-0">
+        <div className="flex items-center justify-between flex-1 gap-1 md:gap-8 pr-2 md:pr-0">
+          <a href="/menu" className="nav-link text-base md:text-xl font-bold py-2 px-0 flex-1 text-center">MENU</a>
           {navItems.map((item) => (
             <button
               key={item.label}
               onClick={() => onNavigate(item.index)}
-              className={`nav-link text-lg md:text-xl font-bold py-2 px-1 md:px-0 flex-1 text-center ${activeSlide === item.index ? 'active' : ''}`}
+              className={`nav-link text-base md:text-xl font-bold py-2 px-0 flex-1 text-center ${activeSlide === item.index ? 'active' : ''}`}
             >
               {item.label}
             </button>

@@ -1,0 +1,9 @@
+.env*
+app/.env*
+app/dist
+app/.output
+app/tmp
+app/tmp-*
+app/audit-*.json
+app/tests
+docs
