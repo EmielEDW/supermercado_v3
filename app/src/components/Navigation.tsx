@@ -6,10 +6,11 @@ interface NavigationProps {
 }
 
 const Navigation = ({ activeSlide, onNavigate }: NavigationProps) => {
-  const navItems = [
+  const navItems: Array<{ label: string; index: number } | { label: string; href: string }> = [
     { label: 'ABOUT', index: 1 },
     { label: 'ROOTS', index: 2 },
     { label: 'PAELLA', index: 3 },
+    { label: 'MENU', href: '/menu' },
     { label: 'CONTACT', index: 4 },
   ];
 
@@ -18,8 +19,9 @@ const Navigation = ({ activeSlide, onNavigate }: NavigationProps) => {
       <div className="flex items-center justify-between px-3 md:px-8 py-4 md:py-5">
         {/* Left Navigation */}
         <div className="flex items-center justify-between flex-1 gap-1 md:gap-8 pr-2 md:pr-0">
-          <a href="/menu" className="nav-link text-base md:text-xl font-bold py-2 px-0 flex-1 text-center">MENU</a>
-          {navItems.map((item) => (
+          {navItems.map((item) => 'href' in item ? (
+            <a key={item.label} href={item.href} className="nav-link text-base md:text-xl font-bold py-2 px-0 flex-1 text-center">{item.label}</a>
+          ) : (
             <button
               key={item.label}
               onClick={() => onNavigate(item.index)}

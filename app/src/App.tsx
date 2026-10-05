@@ -47,7 +47,7 @@ function App() {
       content: (
         <>
           <p>
-            <span className="text-[#c41e3a] font-bold">FAMILIA.</span> Elvira & José-Luis vluchtten als kind voor de Franco-tirannie die zich in 1936 in hun vaderland afspeelde. Via enkele omwegen kwamen ze in Gent terecht, waar ze uiteindelijk de rest van hun leven zouden blijven. Zo werd Gent mijn geboortestad. Mijn grootouders waren bourgondiërs in hart en nieren. Warmte en smaak dicteerden mijn jeugd. Twintig jaar later sta ik zelf achter het fornuis. Mijn naam is Jaime Larrea-Betolaza, welkom bij <span className="text-[#c41e3a] font-bold">SUPERMERCADO.</span>
+            <span className="text-[#c41e3a] font-bold">FAMILIA.</span> Mijn grootouders, Elvira & José-Luis, vluchtten als kind voor de Franco-tirannie die zich in 1936 in hun vaderland afspeelde. Via enkele omwegen kwamen ze in Gent terecht, waar ze uiteindelijk de rest van hun leven zouden blijven. Zo werd Gent mijn geboortestad. Ze waren bourgondiërs in hart en nieren. Warmte en smaak dicteerden mijn jeugd. Twintig jaar later sta ik zelf achter het fornuis. Mijn naam is Jaime Larrea-Betolaza, welkom bij <span className="text-[#c41e3a] font-bold">SUPERMERCADO.</span>
           </p>
         </>
       ),
